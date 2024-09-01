@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../assets/technology/background-technology-desktop.jpg");
+    color: white !important;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+#nav-placeholder {
+    position: relative;
+    z-index: 100;
+}
+.content {
+    margin-left: 1.5rem;
+}
+.tech-container {
+    min-height: 80vh;
+    height: 100%;
+}
+.tech-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.tech-header {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+    margin-block:2rem;
+}
+.tech-header span {
+    font-weight: 700;
+    opacity: 0.25;
+    margin-right: 2rem;
+}
+.tech-elements {
+    max-width: 39.5rem;
+    display: flex;
+}
+.tech-text {
+    margin-right: 1vw;
+}
+.term, .heading {
+    text-transform: uppercase;
+}
+.term {
+    color: #d2d8f9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+}
+.heading {
+    font-family: "Bellefair", sans-serif;
+    font-size: 3.5rem;
+}
+.text  {
+    /* max-width: 445px; */
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #d0d6f9;
+}
+
+
+/* Styling of the Carousel Togglers  */
+.carousel-toggler {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4vw;
+}
+.carousel-toggler .active {
+    background-color: white;
+    color: #0b0d17;
+    border-color: white;
+}
+.carousel-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.25);
+    background-color: transparent;
+    font-family: "Bellefair", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+}
+.carousel-button:not(:last-child){
+    margin-bottom: 1rem;
+}
+.carousel-button:hover:not(.active) {
+    border: 1px solid white;
+    transition: .25s;
+}
+.tech-img img {
+    min-width: 350px;
+    min-height: 360px;
+    max-width: 100%;
+    height: auto;
+}
+/* Responsively adjusting size of text - spaceport   */
+@media (max-width: 800px) {
+    #space {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px){
+    body {
+        background-image: url("../assets/technology/background-technology-tablet.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        overflow-y: visible;  
+    }
+    .content {
+        margin-inline: 0;
+    }
+    .tech-header {
+        margin-left: 1.5rem;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+    .tech-header span {
+        margin-right: 1.18rem;
+    }
+    .tech-row {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .tech-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tech-text {
+        margin-right: 0px;
+        margin-inline: 1.25rem;
+    }
+    .heading {
+        font-size: 2.5rem;
+        margin-block: 1rem;
+    }
+    .text {
+        max-width: 480px;
+    }
+    .tech-row {
+        margin-bottom: 3rem;
+    }
+
+    /* Toggler styling   */
+    .carousel-toggler {
+        flex-direction: row;
+        margin: 3.5rem 0px 1.75rem;
+    }
+    .carousel-button {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    .carousel-button:not(:last-child){
+        margin-right: 1rem;
+    }
+    .tech-img img {
+        max-width:fit-content;
+        min-height: auto;
+        max-height: 320px;
+    }
+    #img-1 {
+        content:  url("../assets/technology/image-launch-vehicle-landscape.jpg");
+    }
+    #img-2 {
+        content: url("../assets/technology/image-spaceport-landscape.jpg");
+    }
+    #img-3 {
+        content: url("../assets/technology/image-space-capsule-landscape.jpg");
+    }
+}
+@media (max-width: 450px){
+    body {
+        background-image: url("../assets/technology/background-technology-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+        overflow-y: visible; 
+    }
+    .tech-header {
+        font-size: 16px;
+        text-align: center;
+        margin-left: auto;
+    }
+    /* Styling for carousel toggler  */
+    .carousel-toggler {
+        margin-top: 2.125rem;
+        margin-bottom: 0.625rem;
+    }
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        font-size: .8rem;
+    }
+    .term {
+        font-size: 0.875rem;
+        letter-spacing: 2.36px;
+        margin-bottom: 0.56rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 1.67;
+    }
+    .tech-img img {
+        max-height: 175px;
+    }
+}

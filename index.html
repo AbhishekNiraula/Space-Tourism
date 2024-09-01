@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/shared/logo.svg">
+
+  <!-- Jquery cdn  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <!-- Bootstrap cdn  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body> 
+  <!-- Navigation bar  -->
+  <div id="nav-placeholder">
+
+  </div>
+
+  <!-- Content   -->
+
+  <section class="content-container">
+    <div class="content">
+      <div class="content-element my-auto mx-auto">
+          <h1 class="heading pb-4">So, you want to travel to</h1>
+          <h1 class="space">space</h1>
+          <p class="text pt-4">
+              Let’s face it; if you want to go to space, you might as well genuinely go to 
+              outer space and not hover kind of on the edge of it. Well sit back, and relax 
+              because we’ll give you a truly out of this world experience!
+          </p>
+      </div>
+      <div class="explore rounded-circle my-auto mx-auto">
+          <p class="explore-text"> explore </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script type="text/javascript">
+  // Dynamically generate navigation bar  for every webpage 
+  $("#nav-placeholder").load("navigation.html", function(){
+    $(".nav-link")[0].classList.add("nav-active");
+  });
+</script>
+</html>

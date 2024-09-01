@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../assets/home/background-home-desktop.jpg");
+    color: white !important;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+/* content  */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    height: 100%;
+    margin: auto 0%;
+}
+.content-element {
+    max-width: 28rem;
+    color: #D0D6F9;
+}
+
+.heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+}
+
+.space {
+    font-family: 'Bellefair', sans-serif;
+    font-size: 150px;
+    color: white;
+    line-height: 172px;
+}
+.text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+
+/* Explore container styling  */
+
+.explore {
+    width: 272px;
+    height: 272px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 0rem solid rgba(255, 255, 255, 0.1);
+    transition: outline-width 0.6s linear;
+    cursor: pointer;
+    -webkit-transition:.25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+}
+.explore:hover {
+    outline-width: 3.4rem;
+}
+
+.explore-text {
+    font-family: 'Bellefair';
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    margin: 0;
+}
+
+.heading,  .space, .explore-text {
+    text-transform: uppercase;
+}
+
+/* Styling for tablet size  */
+
+@media (max-width: 768px ) {
+    body {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-y: visible;
+    }
+    .content {
+        text-align: center;
+        display: grid;
+        margin: 10% auto 0;
+    }
+    .heading {
+        font-size: 20px;
+        line-height: 24px;
+    } 
+    .space {
+        line-height: 150px;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .explore {
+        width: 242px;
+        height: 242px;
+        margin: 10rem auto 6rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background: url("../assets/home/background-home-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        overflow-y: visible;
+    }
+    .content-element {
+        margin: auto 1.5rem !important;
+    }
+
+    .heading {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .space {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .explore {
+        width: 150px;
+        height: 150px;
+        margin: 12rem auto 4rem !important;
+    }
+    .explore-text {
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 1.25px;
+    }
+}
